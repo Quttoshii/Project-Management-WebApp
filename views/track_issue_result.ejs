@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/track_issue.css">
+    <title>Track Issue Results</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/track_issue">
+            <label for="issue-details">Your Issue Details are:</label>
+            <p>Issue ID: <%= data["IssueID"] %><br>
+                Sprint ID: <%= data["SprintID"] %><br>
+                Workflow ID: <%= data["WorkflowID"] %><br>
+                IssueType: <%= data["IssueType"] %><br>
+                CurrentState: <%= data["CurrentState"] %><br>
+                Priority: <%= data["Priority"] %><br>
+                Summary: <%= data["Summary"] %><br>
+                DueDate: <%= data["DueDate"] %></p>
+        </form>
+        <div id="issue-details"></div>
+    </div>
+</body>
+</html>

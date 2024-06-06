@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/views.css">
+    <title>Views Results</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/views" method="post">
+            <label for="project-details">Your Project Details are:</label>
+            <p>Project ID: <%= data["Project_ID"] %><br>
+            Project Name: <%= data["Project_Name"] %><br>
+            Project Description: <%= data["Project_Description"] %><br>
+            Status: <%= data["Status"] %><br>
+            Version ID: <%= data["Version_ID"] %><br>
+            Version Name: <%= data["Version_Name"] %></p>
+        </form>
+        <div id="project-details"></div>
+    </div>
+</body>
+</html>

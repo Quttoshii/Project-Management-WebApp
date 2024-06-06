@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add_report.css">
+    <title>Add Report</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/add_report">
+
+            <label for="projectid">Enter Project-ID:</label>
+            <input type="text" id="projectid" name="projectid" required>
+
+            <label for="userid">Enter User-ID:</label>
+            <input type="text" id="userid" name="userid" required>
+            
+            <label for="reportname">Report Name:</label>
+            <input type="text" id="reportname" name="reportname" required>
+
+            <label for="reporttype ">Report Type:</label>
+            <input type="text" id="reporttype" name="reporttype" required>
+
+            <label for="datecreated">Date Created:</label>
+            <input type="date" id="datecreated" name="datecreated" required>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+            
+            <button type="submit">Add</button>
+        
+        </form>
+    </div>
+</body>
+</html>

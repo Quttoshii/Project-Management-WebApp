@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/project_creation.css">
+    <title>Create Project</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/project_creation" method="post">
+           
+            <label for="projectname">Project Name</label>
+            <input type="text" id="projectname" name="projectname" required>
+
+            <label for="description">Project Description</label>
+            <input type="text" id="description" name="description" required>
+           
+            <label for="status">Status</label>
+            <!-- <input type="text" id="status" name="status" required> -->
+            <select id="status" name="status" required>
+                <option value="">Select a status</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+                <option value="Planning">Planning</option>
+            </select>
+           
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</body>
+</html>

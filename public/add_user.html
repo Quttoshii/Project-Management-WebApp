@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add_user.css">
+    <title>Add user</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/add_user" method="post">
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="role">Role</label>
+            <!-- <input type="text" id="role" name="role" required> -->
+            <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="Admin">Admin</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Customer">Customer</option>
+            </select>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Add</button>
+        
+        </form>
+    </div>
+</body>
+</html>

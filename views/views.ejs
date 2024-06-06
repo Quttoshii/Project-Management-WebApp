@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/views.css">
+    <title>Project Views</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/views" method="post">
+           
+            <label for="projectid">Enter project ID to view details</label>
+            <!-- <input type="text" id="projectid" name="projectid" required> -->
+            <select id="projectid" name="projectid" required>
+                <option value="">Select Project ID</option>
+                <% data.forEach(function(item) { %>
+                    <option><%= item.Project_ID %></option>
+                <% }); %>
+            </select>
+
+            <button type="submit">View</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/view_tasks.css">
+    <title>View Tasks</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/view_tasks" method="get">
+            <label for="assigned-task">Your assigned tasks are:</label>
+            <p>Issue ID: <%= data["IssueID"] %><br>
+            Sprint ID: <%= data["SprintID"] %><br>
+            Workflow ID: <%= data["WorkflowID"] %><br>
+            IssueType: <%= data["IssueType"] %><br>
+            CurrentState: <%= data["CurrentState"] %><br>
+            Priority: <%= data["Priority"] %><br>
+            Summary: <%= data["Summary"] %><br>
+            DueDate: <%= data["DueDate"] %></p>
+        </form>
+        <div id="assigned-task"></div>
+    </div>
+</body>
+</html>

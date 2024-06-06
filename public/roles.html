@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/roles.css">
+    <title>Assigning Roles</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/roles" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="role">Role:</label>
+            <!-- <input type="text" id="role" name="role" required> -->
+            <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="Admin">Admin</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Customer">Customer</option>
+            </select>
+            <button type="submit">Assign</button>
+        </form>
+    </div>
+</body>
+</html>

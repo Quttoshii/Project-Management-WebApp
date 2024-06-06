@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/report.css">
+    <title>Report Results</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/report">
+            <label for="reportdetails">Report Details are:</label>
+            <p>Report ID: <%= data["Report_ID"] %><br>
+                Project_Name: <%= data["Project_Name"] %><br>
+                FirstName: <%= data["FirstName"] %><br>
+                LastName: <%= data["LastName"] %><br>
+                Report_Name: <%= data["Report_Name"] %><br>
+                Report_Type: <%= data["Report_Type"] %><br>
+                Date_Created: <%= data["Date_Created"] %><br>
+                Description: <%= data["Description"] %></p>
+        </form>
+        <div id="report-details"></div>
+    </div>
+</body>
+</html>

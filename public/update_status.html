@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/update_status.css">
+    <title>Update Status</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/update_status" method="post">
+           
+            <label for="issueid">Enter Issue ID</label>
+            <input type="text" id="issueid" name="issueid" required>
+
+            <label for="newstate">Enter the updated state</label>
+            <input type="text" id="newstate" name="newstate" required>
+           
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

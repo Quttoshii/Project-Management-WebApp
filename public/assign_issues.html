@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/assign_issues.css">
+    <title>Assign Issues</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" action="/assign_issues" method="post">
+
+            <label for="sprintid">Sprint ID</label>
+            <input type="text" id="sprintid" name="sprintid" required>
+
+            <label for="workflowid">Workflow ID</label>
+            <input type="text" id="workflowid" name="workflowid" required>
+
+            <label for="issuetype">Issue type</label>
+            <!-- <input type="text" id="issuetype" name="issuetype" required> -->
+            <select id="issuetype" name="issuetype" required>
+                <option value="">Select an issue type</option>
+                <option value="bug">Bug</option>
+                <option value="task">Task</option>
+                <option value="feature request">Feature Request</option>
+                <option value="improvement">Improvement</option>
+            </select>
+
+            <label for="summary">Summary/Description</label>
+            <input type="text" id="summary" name="summary" required>
+           
+            <label for="currentstate">Current State</label>
+            <!-- <input type="text" id="currentstate" name="currentstate" required> -->
+            <select id="currentstate" name="currentstate" required>
+                <option value="">Select a current state</option>
+                <option value="open">Open</option>
+                <option value="in progress">In Progress</option>
+                <option value="resolved">Resolved</option>
+            </select>
+
+            <label for="priority">Priority</label>
+            <!-- <input type="text" id="priority" name="priority" required> -->
+            <select id="priority" name="priority" required>
+                <option value="">Select a priority</option>
+                <option value="critical">Critical</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+            <label for="duedate">Due Date</label>
+            <input type="date" id="duedate" name="duedate" required>
+           
+            <button type="submit">Assign</button>
+        </form>
+    </div>
+</body>
+</html>

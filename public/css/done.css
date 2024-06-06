@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/background25.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20%;
+  }
+  
